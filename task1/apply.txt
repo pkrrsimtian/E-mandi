@@ -1,0 +1,574 @@
+[0m[1mtls_private_key.privatekey: Creating...[0m[0m
+[0m[1mtls_private_key.privatekey: Creation complete after 1s [id=5b4ff07b0ac087e2c72391a56ce575ee988e997c][0m[0m
+[0m[1maws_instance.myOS: Creating...[0m[0m
+[0m[1maws_security_group.firewall: Creating...[0m[0m
+[0m[1maws_key_pair.keypair: Creating...[0m[0m
+[0m[1maws_s3_bucket.pkumar_terraform: Creating...[0m[0m
+[0m[1maws_key_pair.keypair: Creation complete after 1s [id=mykey][0m[0m
+[0m[1mlocal_file.key: Creating...[0m[0m
+[0m[1mlocal_file.key: Creation complete after 0s [id=d7657b7e8fc385ca16382af5b7affbced1a19ef2][0m[0m
+[0m[1maws_security_group.firewall: Creation complete after 4s [id=sg-09705b23b01394492][0m[0m
+[0m[1maws_s3_bucket.pkumar_terraform: Creation complete after 6s [id=terraform-20200615114337895800000001][0m[0m
+[0m[1maws_s3_bucket_object.object: Creating...[0m[0m
+[0m[1maws_s3_bucket_object.object: Creation complete after 2s [id=Static_images][0m[0m
+[0m[1maws_instance.myOS: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.myOS: Still creating... [20s elapsed][0m[0m
+[0m[1maws_instance.myOS: Provisioning with 'remote-exec'...[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Connecting to remote host via SSH...
+aws_instance.myOS (remote-exec):   Host: 13.233.184.203
+aws_instance.myOS (remote-exec):   User: ec2-user
+aws_instance.myOS (remote-exec):   Password: false
+aws_instance.myOS (remote-exec):   Private key: true
+aws_instance.myOS (remote-exec):   Certificate: false
+aws_instance.myOS (remote-exec):   SSH Agent: true
+aws_instance.myOS (remote-exec):   Checking Host Key: false
+[0m[0maws_instance.myOS (remote-exec): Connecting to remote host via SSH...
+aws_instance.myOS (remote-exec):   Host: 13.233.184.203
+aws_instance.myOS (remote-exec):   User: ec2-user
+aws_instance.myOS (remote-exec):   Password: false
+aws_instance.myOS (remote-exec):   Private key: true
+aws_instance.myOS (remote-exec):   Certificate: false
+aws_instance.myOS (remote-exec):   SSH Agent: true
+aws_instance.myOS (remote-exec):   Checking Host Key: false
+[0m[0maws_instance.myOS (remote-exec): Connecting to remote host via SSH...
+aws_instance.myOS (remote-exec):   Host: 13.233.184.203
+aws_instance.myOS (remote-exec):   User: ec2-user
+aws_instance.myOS (remote-exec):   Password: false
+aws_instance.myOS (remote-exec):   Private key: true
+aws_instance.myOS (remote-exec):   Certificate: false
+aws_instance.myOS (remote-exec):   SSH Agent: true
+aws_instance.myOS (remote-exec):   Checking Host Key: false
+[0m[1maws_instance.myOS: Still creating... [30s elapsed][0m[0m
+[0m[0maws_instance.myOS (remote-exec): Connecting to remote host via SSH...
+aws_instance.myOS (remote-exec):   Host: 13.233.184.203
+aws_instance.myOS (remote-exec):   User: ec2-user
+aws_instance.myOS (remote-exec):   Password: false
+aws_instance.myOS (remote-exec):   Private key: true
+aws_instance.myOS (remote-exec):   Certificate: false
+aws_instance.myOS (remote-exec):   SSH Agent: true
+aws_instance.myOS (remote-exec):   Checking Host Key: false
+[0m[0maws_instance.myOS (remote-exec): Connected!
+[0m[0maws_instance.myOS (remote-exec): Loaded plugins: extras_suggestions,
+[0m[0maws_instance.myOS (remote-exec):               : langpacks, priorities,
+[0m[0maws_instance.myOS (remote-exec):               : update-motd
+[0m[0maws_instance.myOS (remote-exec): Existing lock /var/run/yum.pid: another copy is running as pid 3262.
+[0m[0maws_instance.myOS (remote-exec): Another app is currently holding the yum lock; waiting for it to exit...
+[0m[0maws_instance.myOS (remote-exec):   The other application is: yum
+[0m[0maws_instance.myOS (remote-exec):     Memory : 113 M RSS (404 MB VSZ)
+[0m[0maws_instance.myOS (remote-exec):     Started: Mon Jun 15 11:44:07 2020 - 00:07 ago
+[0m[0maws_instance.myOS (remote-exec):     State  : Running, pid: 3262
+[0m[0maws_instance.myOS (remote-exec): Existing lock /var/run/yum.pid: another copy is running as pid 3380.
+[0m[0maws_instance.myOS (remote-exec): Another app is currently holding the yum lock; waiting for it to exit...
+[0m[0maws_instance.myOS (remote-exec):   The other application is: yum
+[0m[0maws_instance.myOS (remote-exec):     Memory :  78 M RSS (297 MB VSZ)
+[0m[0maws_instance.myOS (remote-exec):     Started: Mon Jun 15 11:44:08 2020 - 00:08 ago
+[0m[0maws_instance.myOS (remote-exec):     State  : Running, pid: 3380
+[0m[1maws_instance.myOS: Still creating... [40s elapsed][0m[0m
+[0m[0maws_instance.myOS (remote-exec): Resolving Dependencies
+[0m[0maws_instance.myOS (remote-exec): --> Running transaction check
+[0m[0maws_instance.myOS (remote-exec): ---> Package git.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: perl-Git = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: git-core-doc = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: git-core = 2.23.3-1.amzn2.0.1 for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: emacs-filesystem >= 25.3 for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: perl(Term::ReadKey) for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: perl(Git::I18N) for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: perl(Git) for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: libsecret-1.so.0()(64bit) for package: git-2.23.3-1.amzn2.0.1.x86_64
+[0m[0maws_instance.myOS (remote-exec): ---> Package httpd.x86_64 0:2.4.43-1.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: httpd-tools = 2.4.43-1.amzn2 for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: httpd-filesystem = 2.4.43-1.amzn2 for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: system-logos-httpd for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: mod_http2 for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: httpd-filesystem for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: /etc/mime.types for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: libaprutil-1.so.0()(64bit) for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: libapr-1.so.0()(64bit) for package: httpd-2.4.43-1.amzn2.x86_64
+[0m[0maws_instance.myOS (remote-exec): ---> Package php.x86_64 0:5.4.16-46.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: php-cli(x86-64) = 5.4.16-46.amzn2.0.2 for package: php-5.4.16-46.amzn2.0.2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: php-common(x86-64) = 5.4.16-46.amzn2.0.2 for package: php-5.4.16-46.amzn2.0.2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Running transaction check
+[0m[0maws_instance.myOS (remote-exec): ---> Package apr.x86_64 0:1.6.3-5.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package apr-util.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: apr-util-bdb(x86-64) = 1.6.1-5.amzn2.0.2 for package: apr-util-1.6.1-5.amzn2.0.2.x86_64
+[0m[0maws_instance.myOS (remote-exec): ---> Package emacs-filesystem.noarch 1:25.3-3.amzn2.0.1 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package generic-logos-httpd.noarch 0:18.0.0-4.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package git-core.x86_64 0:2.23.3-1.amzn2.0.1 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package git-core-doc.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package httpd-filesystem.noarch 0:2.4.43-1.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package httpd-tools.x86_64 0:2.4.43-1.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package libsecret.x86_64 0:0.18.5-2.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package mailcap.noarch 0:2.1.41-2.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package mod_http2.x86_64 0:1.15.3-2.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package perl-Git.noarch 0:2.23.3-1.amzn2.0.1 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: perl(Error) for package: perl-Git-2.23.3-1.amzn2.0.1.noarch
+[0m[0maws_instance.myOS (remote-exec): ---> Package perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package php-cli.x86_64 0:5.4.16-46.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package php-common.x86_64 0:5.4.16-46.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Processing Dependency: libzip.so.2()(64bit) for package: php-common-5.4.16-46.amzn2.0.2.x86_64
+[0m[0maws_instance.myOS (remote-exec): --> Running transaction check
+[0m[0maws_instance.myOS (remote-exec): ---> Package apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package libzip010-compat.x86_64 0:0.10.1-9.amzn2.0.5 will be installed
+[0m[0maws_instance.myOS (remote-exec): ---> Package perl-Error.noarch 1:0.17020-2.amzn2 will be installed
+[0m[0maws_instance.myOS (remote-exec): --> Finished Dependency Resolution
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Dependencies Resolved
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): ========================================
+[0m[0maws_instance.myOS (remote-exec):  Package      Arch   Version
+[0m[0maws_instance.myOS (remote-exec):                        Repository  Size
+[0m[0maws_instance.myOS (remote-exec): ========================================
+[0m[0maws_instance.myOS (remote-exec): Installing:
+[0m[0maws_instance.myOS (remote-exec):  git          x86_64 2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 135 k
+[0m[0maws_instance.myOS (remote-exec):  httpd        x86_64 2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 1.3 M
+[0m[0maws_instance.myOS (remote-exec):  php          x86_64 5.4.16-46.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 1.4 M
+[0m[0maws_instance.myOS (remote-exec): Installing for dependencies:
+[0m[0maws_instance.myOS (remote-exec):  apr          x86_64 1.6.3-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 118 k
+[0m[0maws_instance.myOS (remote-exec):  apr-util     x86_64 1.6.1-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  99 k
+[0m[0maws_instance.myOS (remote-exec):  apr-util-bdb x86_64 1.6.1-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  19 k
+[0m[0maws_instance.myOS (remote-exec):  emacs-filesystem
+[0m[0maws_instance.myOS (remote-exec):               noarch 1:25.3-3.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  64 k
+[0m[0maws_instance.myOS (remote-exec):  generic-logos-httpd
+[0m[0maws_instance.myOS (remote-exec):               noarch 18.0.0-4.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  19 k
+[0m[0maws_instance.myOS (remote-exec):  git-core     x86_64 2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 5.0 M
+[0m[0maws_instance.myOS (remote-exec):  git-core-doc noarch 2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 2.4 M
+[0m[0maws_instance.myOS (remote-exec):  httpd-filesystem
+[0m[0maws_instance.myOS (remote-exec):               noarch 2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  23 k
+[0m[0maws_instance.myOS (remote-exec):  httpd-tools  x86_64 2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  87 k
+[0m[0maws_instance.myOS (remote-exec):  libsecret    x86_64 0.18.5-2.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 153 k
+[0m[0maws_instance.myOS (remote-exec):  libzip010-compat
+[0m[0maws_instance.myOS (remote-exec):               x86_64 0.10.1-9.amzn2.0.5
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  30 k
+[0m[0maws_instance.myOS (remote-exec):  mailcap      noarch 2.1.41-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  31 k
+[0m[0maws_instance.myOS (remote-exec):  mod_http2    x86_64 1.15.3-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 146 k
+[0m[0maws_instance.myOS (remote-exec):  perl-Error   noarch 1:0.17020-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  32 k
+[0m[0maws_instance.myOS (remote-exec):  perl-Git     noarch 2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  47 k
+[0m[0maws_instance.myOS (remote-exec):  perl-TermReadKey
+[0m[0maws_instance.myOS (remote-exec):               x86_64 2.30-20.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core  31 k
+[0m[0maws_instance.myOS (remote-exec):  php-cli      x86_64 5.4.16-46.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 2.8 M
+[0m[0maws_instance.myOS (remote-exec):  php-common   x86_64 5.4.16-46.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):                        amzn2-core 563 k
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Transaction Summary
+[0m[0maws_instance.myOS (remote-exec): ========================================
+[0m[0maws_instance.myOS (remote-exec): Install  3 Packages (+18 Dependent packages)
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Total download size: 14 M
+[0m[0maws_instance.myOS (remote-exec): Installed size: 63 M
+[0m[0maws_instance.myOS (remote-exec): Downloading packages:
+[0m[0maws_instance.myOS (remote-exec): (1/21): apr-util-1 |  99 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (2/21): apr-1.6.3- | 118 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (3/21): apr-util-b |  19 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (4/21): emacs-file |  64 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (5/21): generic-lo |  19 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (6/21): git-2.23.3 | 135 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (7/21): git-core-d | 2.4 MB   00:00
+[0m[0maws_instance.myOS (remote-exec): (8/21): git-core-2 | 5.0 MB   00:00
+[0m[0maws_instance.myOS (remote-exec): (9/21): httpd-file |  23 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (10/21): httpd-too |  87 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (11/21): httpd-2.4 | 1.3 MB   00:00
+[0m[0maws_instance.myOS (remote-exec): (12/21): libsecret | 153 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (13/21): libzip010 |  30 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (14/21): mailcap-2 |  31 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (15/21): mod_http2 | 146 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (16/21): perl-Erro |  32 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (17/21): perl-Git- |  47 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (18/21): perl-Term |  31 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): (19/21): php-5.4.1 | 1.4 MB   00:00
+[0m[0maws_instance.myOS (remote-exec): (20/21): php-cli-5 | 2.8 MB   00:00
+[0m[0maws_instance.myOS (remote-exec): (21/21): php-commo | 563 kB   00:00
+[0m[0maws_instance.myOS (remote-exec): ----------------------------------------
+[0m[0maws_instance.myOS (remote-exec): Total       43 MB/s |  14 MB  00:00
+[0m[0maws_instance.myOS (remote-exec): Running transaction check
+[0m[0maws_instance.myOS (remote-exec): Running transaction test
+[0m[0maws_instance.myOS (remote-exec): Transaction test succeeded
+[0m[0maws_instance.myOS (remote-exec): Running transaction
+[0m[0maws_instance.myOS (remote-exec):   Installing : apr-1.6 [        ]  1/21
+aws_instance.myOS (remote-exec):   Installing : apr-1.6 [##      ]  1/21
+aws_instance.myOS (remote-exec):   Installing : apr-1.6 [####    ]  1/21
+aws_instance.myOS (remote-exec):   Installing : apr-1.6 [######  ]  1/21
+aws_instance.myOS (remote-exec):   Installing : apr-1.6 [####### ]  1/21
+aws_instance.myOS (remote-exec):   Installing : apr-1.6.3-5.amzn    1/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : apr-uti [        ]  2/21
+aws_instance.myOS (remote-exec):   Installing : apr-uti [##      ]  2/21
+aws_instance.myOS (remote-exec):   Installing : apr-uti [####    ]  2/21
+aws_instance.myOS (remote-exec):   Installing : apr-uti [######  ]  2/21
+aws_instance.myOS (remote-exec):   Installing : apr-uti [####### ]  2/21
+aws_instance.myOS (remote-exec):   Installing : apr-util-1.6.1-5    2/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : apr-uti [        ]  3/21
+aws_instance.myOS (remote-exec):   Installing : apr-uti [####### ]  3/21
+aws_instance.myOS (remote-exec):   Installing : apr-util-bdb-1.6    3/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [        ]  4/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [#       ]  4/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [##      ]  4/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [###     ]  4/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [####    ]  4/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [#####   ]  4/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [######  ]  4/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [####### ]  4/21
+aws_instance.myOS (remote-exec):   Installing : git-core-2.23.3-    4/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [        ]  5/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-cor [#       ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [##      ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [###     ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [####    ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [#####   ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [######  ]  5/21
+aws_instance.myOS (remote-exec):   Installing : git-cor [####### ]  5/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-core-doc-2.2    5/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : httpd-t [        ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [##      ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [###     ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [####    ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [#####   ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [######  ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-t [####### ]  6/21
+aws_instance.myOS (remote-exec):   Installing : httpd-tools-2.4.    6/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : generic [        ]  7/21
+aws_instance.myOS (remote-exec):   Installing : generic [######  ]  7/21
+aws_instance.myOS (remote-exec):   Installing : generic [####### ]  7/21
+aws_instance.myOS (remote-exec):   Installing : generic-logos-ht    7/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : mailcap [        ]  8/21
+aws_instance.myOS (remote-exec):   Installing : mailcap [######  ]  8/21
+aws_instance.myOS (remote-exec):   Installing : mailcap [####### ]  8/21
+aws_instance.myOS (remote-exec):   Installing : mailcap-2.1.41-2    8/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : httpd-f [        ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [#       ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [###     ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [####    ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [#####   ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [######  ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-f [####### ]  9/21
+aws_instance.myOS (remote-exec):   Installing : httpd-filesystem    9/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : mod_htt [        ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [#       ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [##      ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [####    ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [#####   ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [######  ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_htt [####### ] 10/21
+aws_instance.myOS (remote-exec):   Installing : mod_http2-1.15.3   10/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : httpd-2 [        ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [#       ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [##      ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [###     ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [####    ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [#####   ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [######  ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2 [####### ] 11/21
+aws_instance.myOS (remote-exec):   Installing : httpd-2.4.43-1.a   11/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : 1:perl- [        ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl- [#       ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl- [##      ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl- [###     ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl- [####    ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl- [####### ] 12/21
+aws_instance.myOS (remote-exec):   Installing : 1:perl-Error-0.1   12/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : libzip0 [        ] 13/21
+aws_instance.myOS (remote-exec):   Installing : libzip0 [####### ] 13/21
+aws_instance.myOS (remote-exec):   Installing : libzip010-compat   13/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : php-com [        ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [#       ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [##      ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [###     ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [####    ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [#####   ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [######  ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-com [####### ] 14/21
+aws_instance.myOS (remote-exec):   Installing : php-common-5.4.1   14/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : php-cli [        ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [#       ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [##      ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [###     ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [####    ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [#####   ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [######  ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli [####### ] 15/21
+aws_instance.myOS (remote-exec):   Installing : php-cli-5.4.16-4   15/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : perl-Te [        ] 16/21
+aws_instance.myOS (remote-exec):   Installing : perl-Te [##      ] 16/21
+aws_instance.myOS (remote-exec):   Installing : perl-Te [######  ] 16/21
+aws_instance.myOS (remote-exec):   Installing : perl-Te [####### ] 16/21
+aws_instance.myOS (remote-exec):   Installing : perl-TermReadKey   16/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : libsecr [        ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [#       ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [##      ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [###     ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [####    ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [#####   ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [######  ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecr [####### ] 17/21
+aws_instance.myOS (remote-exec):   Installing : libsecret-0.18.5   17/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : 1:emacs [        ] 18/21
+aws_instance.myOS (remote-exec):   Installing : 1:emacs [#       ] 18/21
+aws_instance.myOS (remote-exec):   Installing : 1:emacs [###     ] 18/21
+aws_instance.myOS (remote-exec):   Installing : 1:emacs [######  ] 18/21
+aws_instance.myOS (remote-exec):   Installing : 1:emacs-filesyst   18/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : perl-Gi [        ] 19/21
+aws_instance.myOS (remote-exec):   Installing : perl-Gi [#       ] 19/21
+aws_instance.myOS (remote-exec):   Installing : perl-Gi [####### ] 19/21
+aws_instance.myOS (remote-exec):   Installing : perl-Git-2.23.3-   19/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : git-2.2 [        ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [#       ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [##      ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [###     ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [####    ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [######  ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.2 [####### ] 20/21
+aws_instance.myOS (remote-exec):   Installing : git-2.23.3-1.amz   20/21
+[0m[0maws_instance.myOS (remote-exec):   Installing : php-5.4 [        ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [#       ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [##      ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [###     ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [####    ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [#####   ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [######  ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4 [####### ] 21/21
+aws_instance.myOS (remote-exec):   Installing : php-5.4.16-46.am   21/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : 1:emacs-filesyst    1/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : git-2.23.3-1.amz    2/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : apr-util-bdb-1.6    3/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : php-cli-5.4.16-4    4/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : libsecret-0.18.5    5/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : perl-TermReadKey    6/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : httpd-2.4.43-1.a    7/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : mod_http2-1.15.3    8/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : apr-1.6.3-5.amzn    9/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : php-5.4.16-46.am   10/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : libzip010-compat   11/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : git-core-2.23.3-   12/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : apr-util-1.6.1-5   13/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : 1:perl-Error-0.1   14/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : httpd-filesystem   15/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : mailcap-2.1.41-2   16/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : generic-logos-ht   17/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : php-common-5.4.1   18/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : perl-Git-2.23.3-   19/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : git-core-doc-2.2   20/21
+[0m[0maws_instance.myOS (remote-exec):   Verifying  : httpd-tools-2.4.   21/21
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Installed:
+[0m[0maws_instance.myOS (remote-exec):   git.x86_64 0:2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):   httpd.x86_64 0:2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):   php.x86_64 0:5.4.16-46.amzn2.0.2
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Dependency Installed:
+[0m[0maws_instance.myOS (remote-exec):   apr.x86_64 0:1.6.3-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   apr-util.x86_64 0:1.6.1-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   apr-util-bdb.x86_64 0:1.6.1-5.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   emacs-filesystem.noarch 1:25.3-3.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):   generic-logos-httpd.noarch 0:18.0.0-4.amzn2
+[0m[0maws_instance.myOS (remote-exec):   git-core.x86_64 0:2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):   git-core-doc.noarch 0:2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):   httpd-filesystem.noarch 0:2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):   httpd-tools.x86_64 0:2.4.43-1.amzn2
+[0m[0maws_instance.myOS (remote-exec):   libsecret.x86_64 0:0.18.5-2.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   libzip010-compat.x86_64 0:0.10.1-9.amzn2.0.5
+[0m[0maws_instance.myOS (remote-exec):   mailcap.noarch 0:2.1.41-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):   mod_http2.x86_64 0:1.15.3-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):   perl-Error.noarch 1:0.17020-2.amzn2
+[0m[0maws_instance.myOS (remote-exec):   perl-Git.noarch 0:2.23.3-1.amzn2.0.1
+[0m[0maws_instance.myOS (remote-exec):   perl-TermReadKey.x86_64 0:2.30-20.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   php-cli.x86_64 0:5.4.16-46.amzn2.0.2
+[0m[0maws_instance.myOS (remote-exec):   php-common.x86_64 0:5.4.16-46.amzn2.0.2
+[0m[0m
+[0m[0maws_instance.myOS (remote-exec): Complete!
+[0m[0maws_instance.myOS (remote-exec): Created symlink from /etc/systemd/system/multi-user.target.wants/httpd.service to /usr/lib/systemd/system/httpd.service.
+[0m[1maws_instance.myOS: Creation complete after 46s [id=i-07955f475b21ccbaa][0m[0m
+[0m[1maws_ebs_volume.myebs: Creating...[0m[0m
+[0m[1maws_ebs_volume.myebs: Still creating... [10s elapsed][0m[0m
+[0m[1maws_ebs_volume.myebs: Creation complete after 11s [id=vol-0014c2f36e8045f3a][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Creating...[0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still creating... [10s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still creating... [20s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Creation complete after 22s [id=vai-3127251108][0m[0m
+[0m[1mnull_resource.nullremote3: Creating...[0m[0m
+[0m[1mnull_resource.nullremote3: Provisioning with 'remote-exec'...[0m[0m
+[0m[0mnull_resource.nullremote3 (remote-exec): Connecting to remote host via SSH...
+null_resource.nullremote3 (remote-exec):   Host: 13.233.184.203
+null_resource.nullremote3 (remote-exec):   User: ec2-user
+null_resource.nullremote3 (remote-exec):   Password: false
+null_resource.nullremote3 (remote-exec):   Private key: true
+null_resource.nullremote3 (remote-exec):   Certificate: false
+null_resource.nullremote3 (remote-exec):   SSH Agent: true
+null_resource.nullremote3 (remote-exec):   Checking Host Key: false
+[0m[0mnull_resource.nullremote3 (remote-exec): Connected!
+[0m[0mnull_resource.nullremote3 (remote-exec): mke2fs 1.42.9 (28-Dec-2013)
+[0m[0mnull_resource.nullremote3 (remote-exec): Filesystem label=
+[0m[0mnull_resource.nullremote3 (remote-exec): OS type: Linux
+[0m[0mnull_resource.nullremote3 (remote-exec): Block size=4096 (log=2)
+[0m[0mnull_resource.nullremote3 (remote-exec): Fragment size=4096 (log=2)
+[0m[0mnull_resource.nullremote3 (remote-exec): Stride=0 blocks, Stripe width=0 blocks
+[0m[0mnull_resource.nullremote3 (remote-exec): 65536 inodes, 262144 blocks
+[0m[0mnull_resource.nullremote3 (remote-exec): 13107 blocks (5.00%) reserved for the super user
+[0m[0mnull_resource.nullremote3 (remote-exec): First data block=0
+[0m[0mnull_resource.nullremote3 (remote-exec): Maximum filesystem blocks=268435456
+[0m[0mnull_resource.nullremote3 (remote-exec): 8 block groups
+[0m[0mnull_resource.nullremote3 (remote-exec): 32768 blocks per group, 32768 fragments per group
+[0m[0mnull_resource.nullremote3 (remote-exec): 8192 inodes per group
+[0m[0mnull_resource.nullremote3 (remote-exec): Superblock backups stored on blocks:
+[0m[0mnull_resource.nullremote3 (remote-exec): 	32768, 98304, 163840, 229376
+[0m[0m
+[0m[0mnull_resource.nullremote3 (remote-exec): Allocating group tables: 0/8   done
+[0m[0mnull_resource.nullremote3 (remote-exec): Writing inode tables: 0/8   done
+[0m[0mnull_resource.nullremote3 (remote-exec): Creating journal (8192 blocks): done
+[0m[0mnull_resource.nullremote3 (remote-exec): Writing superblocks and filesystem accounting information: 0/8   done
+[0m[0m
+[0m[0mnull_resource.nullremote3 (remote-exec): Cloning into '/var/www/html'...
+[0m[0mnull_resource.nullremote3 (remote-exec): remote: Enumerating objects: 73, done.[K
+[0m[0mnull_resource.nullremote3 (remote-exec): [KUnpacking objects:   1% (1/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   2% (2/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   4% (3/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   5% (4/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   6% (5/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   8% (6/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:   9% (7/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  10% (8/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  12% (9/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  13% (10/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  15% (11/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  16% (12/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  17% (13/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  19% (14/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  20% (15/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  21% (16/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  23% (17/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  24% (18/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  26% (19/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  27% (20/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  28% (21/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  30% (22/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  31% (23/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  32% (24/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  34% (25/73)
+[0m[0mnull_resource.nullremote3 (remote-exec): [KUnpacking objects:  35% (26/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  36% (27/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  38% (28/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  39% (29/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  41% (30/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  42% (31/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  43% (32/73)
+[0m[0mnull_resource.nullremote3 (remote-exec): [KUnpacking objects:  45% (33/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  46% (34/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  47% (35/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  49% (36/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  50% (37/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  52% (38/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  53% (39/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  54% (40/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  56% (41/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  57% (42/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  58% (43/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  60% (44/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  61% (45/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  63% (46/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  64% (47/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  65% (48/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  67% (49/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  68% (50/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  69% (51/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  71% (52/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  72% (53/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  73% (54/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  75% (55/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  76% (56/73)
+null_resource.nullremote3 (remote-exec): remote: Total 73 (delta 0), reused 0 (delta 0), pack-reused 73[K
+[0m[0mnull_resource.nullremote3 (remote-exec): [KUnpacking objects:  78% (57/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  79% (58/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  80% (59/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  82% (60/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  83% (61/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  84% (62/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  86% (63/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  87% (64/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  89% (65/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  90% (66/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  91% (67/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  93% (68/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  94% (69/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  95% (70/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  97% (71/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects:  98% (72/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects: 100% (73/73)
+null_resource.nullremote3 (remote-exec): [KUnpacking objects: 100% (73/73), done.
+[0m[1mnull_resource.nullremote3: Creation complete after 4s [id=3349037400889596166][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Creating...[0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [1m50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [2m50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [3m50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [4m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Provisioning with 'remote-exec'...[0m[0m
+[0m[0maws_cloudfront_distribution.Cloudfront_s3 (remote-exec): Connecting to remote host via SSH...
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   Host: 13.233.184.203
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   User: ec2-user
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   Password: false
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   Private key: true
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   Certificate: false
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   SSH Agent: true
+aws_cloudfront_distribution.Cloudfront_s3 (remote-exec):   Checking Host Key: false
+[0m[0maws_cloudfront_distribution.Cloudfront_s3 (remote-exec): Connected!
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still creating... [4m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Creation complete after 4m11s [id=EUEFSA6NFJDWA][0m[0m
+[0m[1mnull_resource.nulllocal1: Creating...[0m[0m
+[0m[1mnull_resource.nulllocal1: Provisioning with 'local-exec'...[0m[0m
+[0m[0mnull_resource.nulllocal1 (local-exec): Executing: ["/bin/sh" "-c" "firefox  13.233.184.203"]
+[0m[1mnull_resource.nulllocal1: Creation complete after 1s [id=6685288470967750230][0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mInterpolation-only expressions are deprecated[0m
+
+[0m  on test.tf line 14, in resource "aws_key_pair" "keypair":
+  14:   public_key = [4m"${tls_private_key.privatekey.public_key_openssh}"[0m
+[0m
+Terraform 0.11 and earlier required all non-constant expressions to be
+provided via interpolation syntax, but this pattern is now deprecated. To
+silence this warning, remove the "${ sequence from the start and the }"
+sequence from the end of this expression, leaving just the inner expression.
+
+Template interpolation syntax is still used to construct strings from
+expressions when the template includes multiple interpolation sequences or a
+mixture of literal strings and interpolations. This deprecation applies only
+to templates that consist entirely of a single interpolation sequence.
+
+(and 4 more similar warnings elsewhere)
+[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 12 added, 0 changed, 0 destroyed.[0m

@@ -1,0 +1,112 @@
+[0m[1mtls_private_key.privatekey: Refreshing state... [id=5b4ff07b0ac087e2c72391a56ce575ee988e997c][0m
+[0m[1maws_s3_bucket.pkumar_terraform: Refreshing state... [id=terraform-20200615114337895800000001][0m
+[0m[1maws_key_pair.keypair: Refreshing state... [id=mykey][0m
+[0m[1maws_instance.myOS: Refreshing state... [id=i-07955f475b21ccbaa][0m
+[0m[1maws_security_group.firewall: Refreshing state... [id=sg-09705b23b01394492][0m
+[0m[1mlocal_file.key: Refreshing state... [id=d7657b7e8fc385ca16382af5b7affbced1a19ef2][0m
+[0m[1maws_ebs_volume.myebs: Refreshing state... [id=vol-0014c2f36e8045f3a][0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Refreshing state... [id=vai-3127251108][0m
+[0m[1mnull_resource.nullremote3: Refreshing state... [id=3349037400889596166][0m
+[0m[1maws_s3_bucket_object.object: Refreshing state... [id=Static_images][0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Refreshing state... [id=EUEFSA6NFJDWA][0m
+[0m[1mnull_resource.nulllocal1: Refreshing state... [id=6685288470967750230][0m
+[0m[1mnull_resource.nulllocal1: Destroying... [id=6685288470967750230][0m[0m
+[0m[1mlocal_file.key: Destroying... [id=d7657b7e8fc385ca16382af5b7affbced1a19ef2][0m[0m
+[0m[1mnull_resource.nulllocal1: Destruction complete after 0s[0m[0m
+[0m[1mlocal_file.key: Destruction complete after 0s[0m[0m
+[0m[1maws_key_pair.keypair: Destroying... [id=mykey][0m[0m
+[0m[1maws_security_group.firewall: Destroying... [id=sg-09705b23b01394492][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Destroying... [id=EUEFSA6NFJDWA][0m[0m
+[0m[1maws_key_pair.keypair: Destruction complete after 1s[0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 30s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 40s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 50s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m0s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m30s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m40s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 1m50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 1m50s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m0s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m30s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m40s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m40s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 2m50s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 2m50s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m0s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 3m0s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m10s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 3m10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m20s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 3m20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Still destroying... [id=EUEFSA6NFJDWA, 3m30s elapsed][0m[0m
+[0m[1maws_cloudfront_distribution.Cloudfront_s3: Destruction complete after 3m37s[0m[0m
+[0m[1mnull_resource.nullremote3: Destroying... [id=3349037400889596166][0m[0m
+[0m[1maws_s3_bucket_object.object: Destroying... [id=Static_images][0m[0m
+[0m[1mnull_resource.nullremote3: Destruction complete after 0s[0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Destroying... [id=vai-3127251108][0m[0m
+[0m[1maws_s3_bucket_object.object: Destruction complete after 1s[0m[0m
+[0m[1maws_s3_bucket.pkumar_terraform: Destroying... [id=terraform-20200615114337895800000001][0m[0m
+[0m[1maws_s3_bucket.pkumar_terraform: Destruction complete after 1s[0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m40s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still destroying... [id=vai-3127251108, 10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 3m50s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still destroying... [id=vai-3127251108, 20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 4m0s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still destroying... [id=vai-3127251108, 30s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 4m10s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Still destroying... [id=vai-3127251108, 40s elapsed][0m[0m
+[0m[1maws_volume_attachment.EBS_ATTACH: Destruction complete after 41s[0m[0m
+[0m[1maws_ebs_volume.myebs: Destroying... [id=vol-0014c2f36e8045f3a][0m[0m
+[0m[1maws_ebs_volume.myebs: Destruction complete after 1s[0m[0m
+[0m[1maws_instance.myOS: Destroying... [id=i-07955f475b21ccbaa][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 4m20s elapsed][0m[0m
+[0m[1maws_instance.myOS: Still destroying... [id=i-07955f475b21ccbaa, 10s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 4m30s elapsed][0m[0m
+[0m[1maws_instance.myOS: Still destroying... [id=i-07955f475b21ccbaa, 20s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Still destroying... [id=sg-09705b23b01394492, 4m40s elapsed][0m[0m
+[0m[1maws_security_group.firewall: Destruction complete after 4m41s[0m[0m
+[0m[1maws_instance.myOS: Still destroying... [id=i-07955f475b21ccbaa, 30s elapsed][0m[0m
+[0m[1maws_instance.myOS: Destruction complete after 31s[0m[0m
+[0m[1mtls_private_key.privatekey: Destroying... [id=5b4ff07b0ac087e2c72391a56ce575ee988e997c][0m[0m
+[0m[1mtls_private_key.privatekey: Destruction complete after 0s[0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mInterpolation-only expressions are deprecated[0m
+
+[0m  on test.tf line 14, in resource "aws_key_pair" "keypair":
+  14:   public_key = [4m"${tls_private_key.privatekey.public_key_openssh}"[0m
+[0m
+Terraform 0.11 and earlier required all non-constant expressions to be
+provided via interpolation syntax, but this pattern is now deprecated. To
+silence this warning, remove the "${ sequence from the start and the }"
+sequence from the end of this expression, leaving just the inner expression.
+
+Template interpolation syntax is still used to construct strings from
+expressions when the template includes multiple interpolation sequences or a
+mixture of literal strings and interpolations. This deprecation applies only
+to templates that consist entirely of a single interpolation sequence.
+
+(and 4 more similar warnings elsewhere)
+[0m[0m
+[0m[1m[32m
+Destroy complete! Resources: 12 destroyed.[0m
